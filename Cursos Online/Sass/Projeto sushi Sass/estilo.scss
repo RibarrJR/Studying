@@ -1,0 +1,396 @@
+@charset"UTF-8";
+$corfundo:black;
+@mixin sombra-padrao{
+		box-shadow: 2px 3px 10px 0 white, 2px 1px 10px 0 white;
+}
+@mixin borda-arredondada($raio:0.3em){
+	-webkit-border-radius:$raio;
+	-moz-border-radius:$raio;
+	-o-border-radius:$raio;
+	-ms-border-radius:$raio;
+    border-radius:$raio;
+}
+
+@mixin paralax{
+	margin: 0 auto;
+	@include borda-arredondada;
+	width: 100%;
+	max-width: 1250px;
+	position: relative;
+	min-height:100%;
+	text-shadow:0 0 10px rgba(0,0,0,0.7);
+	background-position:0% 0%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body{
+height: 100%;
+background:$corfundo;
+
+}
+
+/*==================  layout  ==========================*/
+
+::-webkit-scrollbar-track {
+    background-color: $corfundo;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    @include borda-arredondada;
+}
+
+/*	 ----- barra de navegação -----*/
+
+
+.img-logo{
+	transform:scale(1.2, 1.2);
+	width: 290px;
+	margin-top:6px;
+	display: block;
+	background: url('imagens/oie_transparent.png') no-repeat;
+	background-size:contain;
+	height:78px;
+	margin-left:15%;
+}
+
+
+.navbar-inverse .navbar-nav>li>a{
+	padding: 10px 18px;
+	transition: 0.4s;
+	font-weight: 500;
+	font-size: 16px;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	transition:0.4s;
+	color:rgba(249,233,122,1);
+}
+
+.navbar-brand>a{padding-bottom:0px;}
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	margin-top:-10px;
+	height:70px;
+}
+
+.nav > li > a{
+	position: relative;
+	display: block;
+}
+
+.navbar-nav{margin: 7.5px 0px;}
+
+
+nav.navbar-transparent{
+	border:none;
+	padding:15px 0px;
+	background: rgba(0,0,0, 0.5);
+}
+
+nav{transition:0.4s;}
+
+.navbar-brand{padding:1px 30px;}
+
+.navbar-nav>li{
+	margin-top:12px;
+	margin-left:5px;
+}
+
+
+/*-------   fim da barra de navegação----------*/
+.boxs{	margin: 30px 0px 30px 0px ;}
+/* conteudo principal  paralax */
+
+
+.oriental{
+	@include paralax;
+	background-image:url('imagens/fundo oriental.jpg') ;
+}
+
+.capa{	text-align:center;
+	height:650px;
+}
+
+.texto-capa{
+	position: absolute;
+	padding:200px;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	margin: auto;
+}
+
+.btn-branco{border:2px solid white;}
+.btn-branco:hover{
+	transition:background 0.4,color 0.4;
+	background-color:white;
+	color:$corfundo;
+}
+
+.btn-custom{
+	color: white;
+	@include borda-arredondada(50px);
+	padding:10px 35px ;
+	margin:0px 15px;
+	text-transform: uppercase;
+	transition:background 0.4s,color 0.4s;
+}
+.nova{
+	height:350px;
+	@include borda-arredondada;
+	margin-bottom:20px;
+	padding:0;
+	-webkit-transition: all 0.4s linear;
+	-webkit-filter: grayscale(70%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nova:hover{
+	-webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(0%);
+}
+.cardapio{
+	background:url(imagens/hashi.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.promocao{
+	background:url(imagens/sushi.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;	
+}
+
+
+/*==================  tipografia  ==========================*/
+
+
+.texto-capa>h3{color:white;}
+
+.texto-capa>h4{
+	color:white;
+	margin:50px 0px 50px 0px;
+}
+
+.Titulos{
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding:10px;
+	background:$corfundo;
+	color: white;
+	text-align:center;
+}
+/*terminar ...... arrumando itens*/
+a.tooltips span {
+	position: absolute;
+	width:100%;
+	margin-left:-15px;
+	color: white;
+	background:$corfundo;
+	opacity:0.09;
+	margin-top:55px;
+	height: 20%;
+	line-height: 30px;
+	font-size:40px;
+	text-align: center;
+	transition:0.4s;
+}
+
+a:hover.tooltips span {
+	visibility: visible;
+	height:25%;
+	color:rgba(249,233,122,1);
+	font-size:50px;
+	opacity: 0.9;
+	margin-top:45px;
+	transition:0.6s;
+
+}
+/* Modal */
+
+.modal{
+	margin-top:75px;	
+}
+
+.modal-header, .modal-footer, .modal-body{
+	background: $corfundo;
+	opacity:0.9;
+	@include borda-arredondada;
+}
+
+.modal h4{color:orange;}
+
+.modal button{color:white;}
+
+.modal button:hover{color:orange;}
+
+.modal p{color:white;}
+
+/*fim modal*/
+
+/*carousel*/
+.carousel{height:520px;}
+
+.beteween{	
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+
+}
+
+.carrouselConteudo span{
+	margin-top:10px;
+	color:rgba(249,233,122,1);
+}
+
+.carrouselConteudo a{
+	text-decoration:none;
+	font-size:20px;
+}
+
+.func1{
+	background-position: 50% 0%;
+	background-image:url(imagens/Funcionario1.jpg);
+}
+
+.func2{
+	background-position: 35% 0%;
+	background-image:url(imagens/Funcionario2.jpg);
+}
+
+.func3{
+	background-position: 35% 0%;
+	background-image:url(imagens/Funcionario3.jpg);
+}
+
+.chef{	
+	background-position:15% 0%;
+	background-image:url(imagens/Funcionario.jpg);
+}
+
+.fotofunc{
+	background-repeat:no-repeat;
+	background-size:cover;
+	@include borda-arredondada(0.7em);
+	
+	height:420px;
+}
+.page-header{
+color:white;
+}
+
+
+.carrouselConteudo{
+	border-radius:1em;
+	height:420px;
+	margin-top:60px;
+}
+
+.carousel-control{
+	height:480px;
+	opacity:0.1;
+	transition:0.4s;
+}
+footer{
+	color:white;
+	height:50px;
+	background: rgba(0,0,0, 0.5);
+	text-align:center;
+}
+
+
+
+/* cardapio */
+
+.niguiriParalax{
+	@include paralax;
+	background-size:cover;
+	background-position:65%;
+	background-image:url('imagens/niguiri.jpg') ;
+}
+.rolinhosParalax{
+	@include paralax;
+	background-size:cover;
+	background-image:url('imagens/Rolinhos.jpg');
+}
+.temakisParalax{
+	@include paralax;
+	background-position:45%;
+	background-size:cover;
+	background-image:url("imagens/temakis.jpg");
+}
+.cardapio-conteudo{
+	width:100%;
+	background:rgba(230,230,230,0.1);
+	height:680px;
+}
+
+.Cardapios{
+	height:300px;
+}
+
+.tituloCardapios{
+	position: absolute;
+	color:rgba(249,233,122,1);
+	top: 100px; bottom: 0;
+	left:5%; right: 80%;
+ 	font-size-adjust:auto;
+	margin: auto;
+}
+.thumbnail{
+	background:rgba(230,230,230,0);
+	border:1px solid white;
+	color:white;
+	text-decoration:none;
+	@include borda-arredondada;
+	margin-top:50px;
+	transition:0.4s;
+	height:250px;
+
+	list-style-type:none;
+}
+li{
+	list-style-type:none;
+}
+// div.thumbnail:hover{
+// 	transform:scale(1.2,1.2);
+// }
+.thumbnail{
+	display:flex;
+	flex-direction:column;
+}
+.thumbnail>img{
+	flex:2;
+}
+.thumbnail>h3{
+	text-align:center;
+	flex:1;
+}
+
+.decri{
+opacity:1;
+height:400px;
+}
+
+
+
+
+.tituloCardapios h1{
+	font-size:80px;
+	text-shadow:0 0 10px rgba(0,0,0,0.7);
+}
+
+#left:hover{background:linear-gradient(90deg,rgba(0,0,0,1),rgba(0,0,0,0.5));}
+
+#right:hover{background:linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,1));}
+
+

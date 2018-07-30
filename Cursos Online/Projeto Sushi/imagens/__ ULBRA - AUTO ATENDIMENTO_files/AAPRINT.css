@@ -1,0 +1,389 @@
+
+	body
+	{
+	background: white;
+	}
+	
+
+	#noprint
+	{
+	display: none;
+	}
+	
+
+	#print
+	{
+	width: auto;
+	border: 0;
+	margin: 0 5%;
+	padding: 0;
+	float: none !important;
+	}
+	
+
+	a:link{text-decoration:none;color:#0000FF}
+	a:visited{text-decoration:none;color:#0000FF}
+	a:hover{text-decoration:underline;color:#0000FF}
+	
+
+  .borda_direita
+  {
+  border-right:1px solid #CCCCCC;
+  padding-left:4px;
+  }
+  
+
+	select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color:#F7F7F7;
+	}
+	
+
+	.cor_linha_extra
+	{
+	background-color:#CCCCCC;
+	}
+	
+
+	.linha_extra_a
+	{
+	background-color:#ECECEC;
+	}
+	
+
+	.linha_extra_b
+	{
+	background-color:#F7F7F7;
+	}
+	
+
+	.tb_aviso
+	{
+	text-align:justify;
+	font-size:11px;
+	padding:10px;
+	background-color:#FFE682;
+	border:1px solid #FFCC00;
+	}
+	
+
+	.tb_erro
+	{
+	width:600px;
+	text-align:justify;
+	font-size:11px;
+	padding:10px;
+	color:#FFFFFF;
+	background-color:#CC0000;
+	border:1px solid #E10000;
+	}
+	
+
+	.subtitulo_com_borda_direita
+	{
+	font-weight:bold;
+	font-size:11px;
+	border-right:1px solid #CCCCCC;
+  	padding-left:4px;
+	background-color:#ECECEC;
+	}
+	
+
+	.subtitulo_sem_borda_direita
+	{
+	font-weight:bold;
+	font-size:11px;
+  padding-left:4px;
+	background-color:#ECECEC;
+	}
+	
+
+	.rodape
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#CCCCCC;
+	text-align:right;
+	background-color:#FFFFFF;
+	padding-right:20px;
+	}
+	
+
+	td
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	}
+	
+
+	.link_menu a
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: 20px;
+	}
+	
+
+	.td_conteudo
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#999999;
+	text-align:right;
+	padding:20px;
+	}
+	
+
+	.tb_interna
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-align:center;
+	padding:10px;
+	background-color:#F7F7F7;
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	}
+	
+
+	body
+	{
+	scrollbar-face-color: #cccccc;
+	scrollbar-highlight-color: #ececec;
+	scrollbar-3dlight-color: #333333;
+	scrollbar-darkshadow-color: #ececec;
+	scrollbar-arrow-color: #333333;
+	scrollbar-track-color: #EAEAEA;
+	}
+	
+
+	textarea {
+	height:80px;
+	}
+	
+
+	input, textarea
+	{
+	scrollbar-face-color: #CCCCCC;
+	scrollbar-highlight-color: #CCCCCC;
+	scrollbar-3dlight-color: #CCCCCC;
+	scrollbar-darkshadow-color: #999999;
+	scrollbar-shadow-color: #CCCCCC;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-track-color: #ECECEC;
+	}
+	
+
+	.input_text
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(/ows-img/aa/textfield/tf_geral.gif);
+	padding-top:2px;
+	padding-left:5px;
+	height:20px;
+	border:1px solid #999999;
+	}
+	
+
+	.input_text_selecionado
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(/ows-img/aa/textfield/tf_cinza.gif);
+	padding-top:3px;
+	padding-left:6px;
+	height:20px;
+	border:1px solid #999999;
+	}
+	
+
+	.input_text_desabilitado
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(/ows-img/aa/textfield/tf_cinza.gif);
+	padding-top:3px;
+	padding-left:6px;
+	height:20px;
+	border:1px solid #999999;
+	}
+	
+
+	.input_area_desabilitado
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-image: url(/ows-img/aa/textfield/ta_cinza.gif);
+	padding-top:2px;
+	padding-left:5px;
+	border:1px solid #999999;
+	}
+	
+
+	.input_textarea
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-image: url(/ows-img/aa/textfield/ta_geral.gif);
+	padding-top:2px;
+	padding-left:5px;
+	border:1px solid #999999;
+	}
+	
+
+	.input_textarea_selecionado
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-image: url(/ows-img/aa/textfield/ta_cinza.gif);
+	background-repeat: no-repeat;
+	background-color:"#CCCCCC";
+	padding-top:3px;
+	padding-left:6px;
+	border:1px solid #999999;
+	}
+	
+
+	.input_button_tam1
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #666666;
+	background-image: url(/ows-img/aa//botoes/bt_botao.gif);
+	width:140px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_tam2
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #666666;
+	background-image: url(/ows-img/aa//botoes/bt_botao_tam2.gif);
+	width:40px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_tam3
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #666666;
+	background-image: url(/ows-img/aa//botoes/bt_botao_tam3.gif);
+	width:90px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_bigger
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #666666;
+	background-image: url(/ows-img/aa//botoes/bt_botao_bigger_a.gif);
+	width:180px;
+	height:60px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_ok_tam1
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/ows-img/aa//botoes/bt_botao_ok.gif);
+	width:140px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_ok_tam2
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/ows-img/aa//botoes/bt_botao_ok_tam2.gif);
+	width:40px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_ok_tam3
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/ows-img/aa//botoes/bt_botao_ok_tam3.gif);
+	width:90px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_bigger_b
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #000000;
+	background-image: url(/ows-img/aa//botoes/bt_botao_bigger_b_cinza.gif);
+	width:180px;
+	height:60px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_cancelar_tam1
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/ows-img/aa//botoes/bt_botao_cancelar_tam1.gif);
+	width:140px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_cancelar_tam2
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/ows-img/aa//botoes/bt_botao_cancelar_tam2.gif);
+	width:40px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	
+
+	.input_button_cancelar_tam3
+	{
+	font-size:  10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(/ows-img/aa//botoes/bt_botao_cancelar_tam3.gif);
+	width:90px;
+	height:26px;
+	cursor:hand;
+	border:0px;
+	}
+	

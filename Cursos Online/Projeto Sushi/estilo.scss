@@ -1,0 +1,188 @@
+
+body{
+height: 100%;
+/*background:linear-gradient(00deg,rgba(0,0,0,1),rgba(140,0,0,1));*/
+
+background:linear-gradient(50deg,rgba(255,128,0,1),rgba(249,233,122,1));
+}
+
+
+/*==================  layout  ==========================*/
+
+/*	 ----- barra de navegação -----*/
+
+
+.img-logo{
+	height:80px;
+	width: 162px;
+	display: block;
+	background: url('imagens/oie_transparent.png') no-repeat;
+	background-size:contain;
+}
+
+
+nav.navbar-transparent{
+	border:none;
+
+	padding:20px 0px;
+	background: rgba(0,0,0, 0.5);
+
+}
+.navbar-brand{
+	padding:1px 40px;
+}
+
+.navbar-header{
+	height:75px;
+	padding-bottom:10px;
+	margin-left: 40px;
+	
+}
+nav{
+	transition:0.4s;
+}
+/*-------   fim da barra de navegação----------*/
+
+
+.boxs{
+	margin-bottom  :30px auto;
+	margin-top: 30px auto;
+}
+.col-md-4{
+	height:150px;
+}
+/* conteudo principal  paralax */
+
+
+.oriental{
+margin: 0 auto;
+	width: 100%;
+	max-width: 1250px;
+	position: relative;
+	min-height: 100%;
+	text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+	background-position:15% 0%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+background-image:url('imagens/fundo oriental.jpg') ;
+
+/*
+	margin-top:100px;*/
+}
+.capa{	text-align:center;
+	height:650px;	
+}
+.texto-capa{
+
+	position: absolute;
+	padding-top:200px;
+top: 0; bottom: 0;
+left: 0; right: 0;
+margin: auto;
+}
+
+.btn-branco{
+	border:2px solid white;
+}
+.btn-branco:hover{
+
+transition:background 0.4,color 0.4;
+
+	background-color:white;
+	color:black;
+}
+
+.btn-custom{
+color: white;
+border-radius:500px;
+-webkit-border-radius:500px;
+-moz-border-radius:500px;
+padding:10px 35px ;
+margin:0px 15px;
+text-transform: uppercase;
+transition:background 0.4s,color 0.4s;
+}
+.nova{
+	height:350px;
+	margin-bottom:20px;
+}
+.nova{
+	padding:0;
+
+	-webkit-transition: all 0.8s linear;
+	-webkit-filter: grayscale(70%);
+
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer{
+	color:white;
+	height:50px;
+	background: rgba(0,0,0, 0.5);
+	text-align:center;
+}
+
+.nova:hover{
+-webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(0%);
+}
+.cardapio{
+	background:url(imagens/hashi.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+}
+.promocao{
+	background:url(imagens/sushi.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+	font-size:16px;
+	font-weight:500;
+	padding:10px 18px;
+	transition:0.4s;
+}
+.navbar-brand>a{
+	padding-bottom:100px;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+	transition:0.4s;
+		color:black;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	margin-top:-10px;
+	height:55px;
+}
+
+
+/*==================  tipografia  ==========================*/
+.navbar-nav>li{
+margin-top:12px;
+margin-left:5px;
+
+}
+.texto-capa>h3{
+color:white;
+}
+.texto-capa>h4{
+color:white;
+margin:50px 0px 50px 0px;
+
+}
+
+.Titulos{
+
+	 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	padding:10px;
+	background:black;
+	color: white;
+	text-align:center;
+}
+

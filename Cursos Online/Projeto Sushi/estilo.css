@@ -1,0 +1,401 @@
+
+body{
+height: 100%;
+/*background:linear-gradient(00deg,rgba(0,0,0,1),rgba(140,0,0,1));*/
+background:black;
+/*background:linear-gradient(120deg,rgba(255,128,0,1),rgba(249,233,122,1));*/
+}
+
+
+
+/*==================  layout  ==========================*/
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    border-radius:0.3em;
+}
+
+/*	 ----- barra de navegação -----*/
+
+
+.img-logo{
+	transform:scale(1.2, 1.2);
+	width: 290px;
+	margin-top:6px;
+	display: block;
+	background: url('imagens/oie_transparent.png') no-repeat;
+	background-size:contain;
+	height:78px;
+	margin-left:15%;
+}
+
+
+/*.navbar-right{
+margin-right: -15px;
+
+}
+
+
+
+.navbar-nav{
+margin: 0;
+}*/
+
+nav.navbar-transparent{
+	border:none;
+	padding:15px 0px;
+	background: rgba(0,0,0, 0.5);
+
+}
+.navbar-brand{
+	padding:1px 30px;
+	position:relative;
+	margin-top:30px;
+}
+
+.navbar-header{
+	height:75px;
+	padding-bottom:10px;
+	margin-left: 40px;
+	
+}
+nav{
+	transition:0.4s;
+
+	padding:8px 0px;
+}
+/*-------   fim da barra de navegação----------*/
+
+
+.boxs{
+	margin-top: 30px;
+	margin-bottom  :30px;
+	
+}
+.col-md-4{
+	height:150px;
+}
+/* conteudo principal  paralax */
+
+
+.oriental{
+margin: 0 auto;
+border-radius:0.3em;
+	width: 100%;
+	max-width: 1250px;
+	position: relative;
+	min-height: 100%;
+	text-shadow:0 0 10px rgba(0,0,0,0.7);
+
+	background-position:15% 0%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+background-image:url('imagens/fundo oriental.jpg') ;
+}
+.cardapioParalax{
+	margin: 0 auto;
+border-radius:0.3em;
+	width: 100%;
+	max-width: 1250px;
+	position: relative;
+	min-height: 100%;
+	text-shadow:0 0 10px rgba(0,0,0,0.7);
+	background-position:15% 0%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+background-image:url('imagens/promo.jpg') ;
+
+}
+.capa{	text-align:center;
+	height:650px;	
+}
+.texto-capa{
+	position: absolute;
+	padding-top:200px;
+top: 0; bottom: 0;
+left: 0; right: 0;
+margin: auto;
+}
+
+.btn-branco{
+	border:2px solid white;
+}
+.btn-branco:hover{
+
+transition:background 0.4,color 0.4;
+
+	background-color:white;
+	color:black;
+}
+
+.btn-custom{
+color: white;
+border-radius:500px;
+-webkit-border-radius:500px;
+-moz-border-radius:500px;
+padding:10px 35px ;
+margin:0px 15px;
+text-transform: uppercase;
+transition:background 0.4s,color 0.4s;
+}
+.nova{
+	height:350px;
+	border-radius:0.3em;
+	margin-bottom:20px;
+}
+.nova{
+	padding:0;
+
+	-webkit-transition: all 0.4s linear;
+	-webkit-filter: grayscale(70%);
+
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer{
+	color:white;
+	height:50px;
+	background: rgba(0,0,0, 0.5);
+	text-align:center;
+}
+
+.nova:hover{
+-webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(0%);
+}
+/* ------  Conteudo 2 -------*/
+/*.subtitle{
+	height:100px;
+	width:100%;
+	transition:0.4s;
+	left:30px;
+	background:rgba(249,233,122,1);
+	text-decoration:none;
+	display: flex;
+	flex-direction:column;
+	color:black;
+	z-index: 1;
+
+  
+}
+.subtitle h2{
+	text-align:center;
+	text-decoration:none;
+}
+.subtitle:hover {
+	z-index:1;
+
+}*/
+.cardapio{
+	background:url(imagens/hashi.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+.promocao{
+	background:url(imagens/sushi.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+
+	
+}
+
+
+.navbar-inverse .navbar-nav>li>a{
+	padding: 10px 18px;
+	transition: 0.4s;
+	font-weight: 500;
+	font-size: 16px;
+	color: white;
+}
+.navbar-brand>a{
+	padding-bottom:100px;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+	transition:0.4s;
+		color:rgba(249,233,122,1);
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	margin-top:-10px;
+	height:55px;
+}
+
+
+/*==================  tipografia  ==========================*/
+.navbar-nav>li{
+margin-top:12px;
+margin-left:5px;
+
+}
+.texto-capa>h3{
+color:white;
+}
+.texto-capa>h4{
+color:white;
+margin:50px 0px 50px 0px;
+
+}
+
+.Titulos{
+
+	 box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	padding:10px;
+	background:black;
+	color: white;
+	text-align:center;
+}
+
+
+
+
+/*terminar ...... arrumando itens*/
+
+
+
+a.tooltips span {
+
+position: absolute;
+width:100%;
+margin-left:-15px;
+color: white;
+background:black;
+opacity:0.09;
+margin-top:55px;
+height: 20%;
+line-height: 30px;
+font-size:40px;
+text-align: center;
+transition:0.4s;
+}
+
+a:hover.tooltips span {
+visibility: visible;
+height:25%;
+color:rgba(249,233,122,1);
+font-size:50px;
+opacity: 0.9;
+margin-top:45px;
+
+transition:0.6s;
+
+}
+/* Modal */
+
+.modal{
+margin-top:75px;	
+}
+
+.modal-header, .modal-footer, .modal-body{
+	background:black;
+	opacity:0.9;
+	border-radius:0.3em;
+}
+
+.modal h4{
+	color:orange;
+}
+
+.modal button{
+	color:white;
+}
+
+.modal button:hover{
+	color:orange;
+}
+.modal p{
+	color:white;
+}
+
+/*fim modal*/
+
+/*carousel*/
+.carousel{
+	height:520px;
+}
+.beteween{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+
+}
+.carrouselConteudo span{
+	margin-top:10px;
+color:rgba(249,233,122,1);
+}
+.carrouselConteudo a{
+text-decoration:none;
+font-size:20px;
+}
+.func1{
+	background-position: 50% 0%;
+	background-image:url(imagens/Funcionario1.jpg);
+}
+.func2{
+	background-position: 35% 0%;
+	background-image:url(imagens/Funcionario2.jpg);
+}
+.func3{
+	background-position: 35% 0%;
+	background-image:url(imagens/Funcionario3.jpg);
+}
+.chef{	
+	background-position:15% 0%;
+	background-image:url(imagens/Funcionario.jpg);
+}
+.fotofunc{
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:7em;
+	height:420px;
+}
+.Equipe {
+	border-bottom:0.2px solid gray;
+
+}
+.func1 span{
+}
+.carrouselConteudo{
+	border-radius:1em;
+	height:420px;
+	margin-top:60px;
+}
+.carousel-control{
+	height:480px;
+	opacity:0.1;
+	transition:0.4s;
+}
+#left:hover{
+	background:linear-gradient(90deg,rgba(0,0,0,1),rgba(0,0,0,0.5));
+}
+
+#right:hover{
+	background:linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,1));
+}
+
+
+.nav > li > a{
+position: relative;
+display: block;
+}
+
+
+
+.navbar-nav{
+margin: 7.5px -15px;
+}
+
+#barra-navegacao{
+margin-top:10px;
+
+}
